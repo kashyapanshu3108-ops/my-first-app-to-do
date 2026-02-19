@@ -1,0 +1,35 @@
+/* h1 {
+  padding:250px;
+  padding-right:150px;
+  margin:100px;
+} */
+ .delete{
+  background-color:red;
+  border-radius:40px;
+ }
+ /* *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: arial, helvetica, sans-serif; 
+ }*/
+  /* body{
+  background: #f4f7fb;
+  display: flex; 
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+ }  */
+   *{
+    background-color:blueviolet;
+   }
+   .bb{
+    background-color:yellow;
+    
+   }
+   .tt{
+    background-color:azure;
+   }
+   /* .uu{
+      background-color:blanchedalmond
+   } */
