@@ -45,16 +45,26 @@ let inp=document.querySelector("input");
 
 // main code for to do app
 btn.addEventListener("click",function(){
+        let value =inp.value.trim();
+    if(value===""){
+         alert("pls!enter a task");
+        //console.log("enter something");
+return;
+    }
+    
     let item = document.createElement("li");
-    item.innerText=inp.value;
+    item.innerText=value;
 
     let delbtn = document.createElement("button");
     delbtn.innerText="delete";
     delbtn.classList.add("delete");
-    
+
+
+
     item.appendChild(delbtn);
     ul.appendChild(item);
     inp.value='';
+
 
 });
 ul.addEventListener("click", function(event){
@@ -65,7 +75,15 @@ ul.addEventListener("click", function(event){
     }
 });
 
+// strike feature 
+ul.addEventListener("click",function(e){
+    if(e.target.classList.contains("delbtn"))return;
 
+    if (e.target.tagName==="LI"){
+        e.target.classList.toggle("done")
+    }
+
+})
 
  // bekar code faltu ka code
 // let req= prompt("please enter your request");
@@ -85,5 +103,12 @@ ul.addEventListener("click", function(event){
 //         let task = prompt("please enter the task you want to add");
 //         todo.push(task);
 //         console.log("task added");
+
 //     }
 // }
+let filterBtn = document.querySelector(".ss");
+let sidebar = document.querySelector("#sidebar");
+
+filterBtn.addEventListener("click", function() {
+    sidebar.classList.toggle("active");
+});

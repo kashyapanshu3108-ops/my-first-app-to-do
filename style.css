@@ -21,7 +21,7 @@
   height:100vh;
  }  */
    *{
-    background-color:blueviolet;
+    background-color:rgb(106, 159, 205) ;
    }
    .bb{
     background-color:yellow;
@@ -29,7 +29,41 @@
    }
    .tt{
     background-color:azure;
+    font-family : monospace;
    }
    /* .uu{
       background-color:blanchedalmond
    } */
+    
+    .done{
+      text-decoration: line-through;
+    }
+    .ss{
+   background-color: yellowgreen;
+    }
+
+    #sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;   /* screen ke bahar */
+    width: 200px;
+    height: 100%;
+    background: #eee;
+    transition: 0.5s;
+    padding: 20px;
+    background-color: yellowgreen;
+}
+
+/* jab active ho */
+#sidebar.active {
+    right: 0;   /* screen me aa jayega */
+}
+#all{
+  background-color: #eee;
+}
+#completed{
+  background-color: #eee;
+}
+#pending{
+  background-color: #eee;
+}
