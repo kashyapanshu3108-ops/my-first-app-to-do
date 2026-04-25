@@ -112,3 +112,14 @@ let sidebar = document.querySelector("#sidebar");
 filterBtn.addEventListener("click", function() {
     sidebar.classList.toggle("active");
 });
+
+list=document.querySelector("ul");
+list.addEventListener("dblclick",function(e){
+if(e.target.tagName==="LI"){
+    let oldText=e.target.firstChild.textContent;
+    let =prompt("Edit task:",oldText);
+    if(newText!==null&&newText.trim()!==""){
+        e.target.firstChild.textContent=newText;
+    }
+}
+});
